@@ -59,6 +59,10 @@ function Main(){
 
         // Repo Section
 
+        let repositories = document.createElement("div");
+        repositories.classList.add("repositories");
+        mainContainer.append(repositories)
+
         let promiseRepo = fetch(`https://api.github.com/users/${userName}/repos`)
 
         promiseRepo.then((responsee)=>{
@@ -67,11 +71,15 @@ function Main(){
         }).then((RepoData)=>{
             let repoContainer = []
             for( repo of RepoData){
-                repoContainer.push(RepoData.name);
+                repoContainer.push(repo.name);
             }
             
-            for(let index = 0; index<repoContainer.length; index++){
-                console.log(repoContainer[index]);
+            // console.log(repoContainer);
+            for(let index = 0; index<repoContainer.length; index++ ){
+                let repoHolder = document.createElement("div");
+                repoHolder.classList.add("repoHolder");
+                repoHolder.innerText=`${repoContainer[index]}`
+                repositories.append(repoHolder);
             }
 
         })

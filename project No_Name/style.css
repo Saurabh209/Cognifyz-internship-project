@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 .innerContainer{
@@ -67,4 +67,14 @@
 .UserData{
     width: 100%;
     border: 2px solid pink;
+}
+.repositories{
+    width: 80%;
+    border: 1px solid yellow;
+}
+.repoHolder{
+    height: 10px;
+    width: 80%;
+    border: 2px solid grey;
+    border-radius: 3px;
 }
