@@ -1,10 +1,11 @@
 *{
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 
 .mainContainer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -34,10 +35,36 @@
 
 .userContainer{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: ;
     width: 70%;
     border: 2px solid black;
+}
+
+.profilePicContainer{
+
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    
+}
+.imgConfig{
+    border: 1px solid yellowgreen;
+    height: 220px;
+    width: 220px;
+}
+
+.profile_Data{
+    height: 220px;
+    text-align:left;
+    width: 420px;
+    border: 1px solid red;
+}
+.UserData{
+    width: 100%;
+    border: 2px solid pink;
 }
