@@ -1,0 +1,250 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+    
+}
+
+#particles-js {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.mainContainer{
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+  
+}
+.innerContainer{
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 700px;
+    /* border: 2px solid rgb(66, 66, 66); */
+    border-radius: 12px;
+}
+.searchBox{
+    margin-bottom: 20px;
+}
+/* .input{
+    transition-property: all;
+    transition-duration: .3s;
+    padding-left: 5px;
+    height: 50px;
+    width: 500px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    border-radius: 15px;
+   
+} */
+/* .input:hover{
+    box-shadow: 0px 0px 57px rgb(161, 161, 161);
+} */
+
+/* From Uiverse.io by Jaareet */ 
+.input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    height: 37px;
+    width: 420px;
+    transition: .4s;
+  }
+  
+  .input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 0 .15vw rgb(51, 184, 237);
+  }
+/* From Uiverse.io by mrhyddenn */ 
+.button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+  
+  .userContainer{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+    width: 70%;
+  
+}
+
+
+  .profilePicContainer{
+
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    
+}
+.imgConfig{
+    
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -1px -1px 50px rgb(58, 169, 213);
+}
+
+.profile_Data{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    backdrop-filter: blur(3px);
+    color: rgb(224, 224, 224);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    height: 220px;
+    text-align:left;
+    width: 620px;
+    
+}
+h1{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 234, 255);
+}
+h4{
+    margin: 0px;
+    padding: 0px;
+
+}
+h5{
+    margin: 0px;
+    padding: 0px;
+}
+.UserData{
+    width: 100%;
+    border: 2px solid pink;
+}
+.repositories{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    
+}
+.repoHolder{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0px;
+    height: 150px;
+    width: 420px;
+    min-width: 270px;
+   
+    border-radius: 3px;
+}
+.repoHolder:hover{
+
+    transform: scale(1.12);
+    transition-duration: 3s;
+}
+.repoConfig{
+    margin: 0px;
+}
