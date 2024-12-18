@@ -77,8 +77,13 @@ function Main(){
             // console.log(repoContainer);
             for(let index = 0; index<repoContainer.length; index++ ){
                 let repoHolder = document.createElement("div");
+                
+                let rep0 = document.createElement('img');
+                rep0.classList.add("repoConfig");
+                rep0.src=`https://github-readme-stats.vercel.app/api/pin/?username=${userName}&repo=${repoContainer[index]}&cache_seconds=86400&theme=gruvbox_light` ;
+                
                 repoHolder.classList.add("repoHolder");
-                repoHolder.innerText=`${repoContainer[index]}`
+                repoHolder.appendChild(rep0);
                 repositories.append(repoHolder);
             }
 
