@@ -168,7 +168,30 @@ function Main(){
 
         const UserData = document.createElement('div');
         UserData.classList.add('UserData');
-        UserData.innerHTML = `<h4>Contains User Data<h4/>`;
+
+        // Follower
+        const follower = document.createElement("button");
+        follower.classList.add("follower");
+        follower.innerHTML=`Followers: ${responseData.followers}`
+        UserData.appendChild(follower)
+
+        // Following
+        const following = document.createElement("button")
+        following.classList.add("following");
+        following.innerHTML=`Following: ${responseData.following}`
+        UserData.appendChild(following)
+
+        // Public Repos
+        const pubRepo = document.createElement("button");
+        pubRepo.classList.add("pubRepo")
+        pubRepo.innerHTML = `Public Repositories: ${responseData.public_repos}`;
+        UserData.appendChild(pubRepo)
+
+        // location
+        const location = document.createElement("button");
+        location.classList.add("location");
+        location.innerHTML = `Address: ${responseData.location}`;
+        UserData.appendChild(location)
 
         mainContainer.append(UserData);
 

@@ -215,8 +215,14 @@ h5{
     padding: 0px;
 }
 .UserData{
-    width: 100%;
-    border: 2px solid pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+    color: white;
+    width: 80%;
+    
 }
 .repositories{
     
@@ -239,12 +245,99 @@ h5{
     min-width: 270px;
    
     border-radius: 3px;
+    transition: all;
+    transition-duration: .3s;
 }
 .repoHolder:hover{
 
     transform: scale(1.12);
-    transition-duration: 3s;
+    
 }
 .repoConfig{
     margin: 0px;
 }
+
+.follower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    color: #ff3e12;
+    
+    
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: .1s ease-in-out, .4s color;
+}
+.following{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 150px;
+    outline: none;
+    color: #ff3e12;
+    height: 40px;
+
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.pubRepo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+    outline: none;
+    color: #ff3e12;
+    height: 40px;
+
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transition-duration: .5s;
+}
+.pubRepo:hover{
+    transition: all;
+    transition-duration: .5s;
+    box-shadow: -1px -1px 20px rgb(245, 147, 0);
+
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+    outline: none;
+    color: #ff3e12;
+    height: 40px;
+
+    border: 2px dashed #DAA06D;
+    border-radius: 15px;
+    background-color: #EADDCA;
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transition-duration: .5s;
+}
+  
+  /* button:active {
+    transform: translateX(0.1em) translateY(0.1em);
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+  } */
